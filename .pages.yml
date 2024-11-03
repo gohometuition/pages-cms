@@ -1,7 +1,47 @@
-home:
-  path: /
-  title: Home
-  description: Welcome to our tutoring platform
+/:  # Home page configuration
+  layout: home
+  meta:
+    title: Your Tutoring Platform
+    description: Find the perfect tutor or become one with our leading tutoring service
+  blocks:
+    - type: hero
+      title: Welcome to Our Tutoring Platform
+      description: Connect with qualified tutors or start your tutoring journey today
+      image: hero-image.jpg
+      cta:
+        text: Get Started
+        link: /request-tutor
+    
+    - type: features
+      items:
+        - title: Find a Tutor
+          description: Browse our network of qualified tutors
+          link: /request-tutor
+        - title: Become a Tutor
+          description: Join our teaching community
+          link: /become-tutor
+        - title: Competitive Rates
+          description: Check our tuition fees
+          link: /tuition-fee
+    
+    - type: testimonials
+      title: What Our Students Say
+      items:
+        - author: John Doe
+          text: "Found my perfect math tutor here!"
+        - author: Jane Smith
+          text: "Excellent learning experience!"
+
+    - type: cta-section
+      title: Ready to Start?
+      description: Choose your path to begin
+      buttons:
+        - text: Request a Tutor
+          link: /request-tutor
+          primary: true
+        - text: Become a Tutor
+          link: /become-tutor
+          primary: false
 
 tuition:
   path: /tuition-fee
