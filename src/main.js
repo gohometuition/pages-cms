@@ -30,4 +30,21 @@ app.use(router)
 
 app.config.globalProperties.$filters = { fromNow, fileSize };
 
+// Add meta handling for pages
+router.beforeEach((to, from, next) => {
+  // Update page title
+  document.title = to.meta.title || 'Home Tutoring Service'
+  
+  // Update meta description
+  let desc = document.querySelector('meta[name="description"]')
+  if (!desc) {
+    desc = document.createElement('meta')
+    desc.setAttribute('name', 'description')
+    document.head.appendChild(desc)
+  }
+  desc.setAttribute('content', to.meta.description || 'Professional home tutoring services')
+  
+  next()
+})
+
 app.mount('#app')
