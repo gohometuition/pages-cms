@@ -1,1 +1,91 @@
 
+meta:
+  title: Your Tutoring Service
+  description: Professional home tutoring services
+
+pages:
+  /:
+    title: Home
+    description: Find your perfect tutor or become one
+    component: home
+  
+  /tuition-fee:
+    title: Tuition Fees
+    description: Learn about our tutoring rates and payment options
+    component: page
+  
+  /terms:
+    title: Terms of Service
+    description: Terms and conditions for using our service
+    component: page
+  
+  /become-tutor:
+    title: Become a Tutor
+    description: Join our tutoring team and start teaching
+    component: page
+  
+  /request-tutor:
+    title: Request a Tutor
+    description: Find the perfect tutor for your needs
+    component: page
+  
+  /faq-tutors:
+    title: FAQ for Tutors
+    description: Frequently asked questions for tutors
+    component: page
+  
+  /faq-parents:
+    title: FAQ for Parents
+    description: Frequently asked questions for parents
+    component: page
+  
+  /about-us:
+    title: About Us
+    description: Learn more about our tutoring service
+    component: page
+  
+  /privacy:
+    title: Privacy Policy
+    description: Our privacy policy and data protection practices
+    component: page
+  
+  /contact-us:
+    title: Contact Us
+    description: Get in touch with our team
+    component: page
+  
+  /上门补习的学费都是先进家教的口袋吗:
+    title: 上门补习的学费说明
+    description: 了解我们的上门补习收费标准和付款方式
+    component: page
+
+navigation:
+  header:
+    - title: Home
+      path: /
+    - title: Request Tutor
+      path: /request-tutor
+    - title: Become Tutor
+      path: /become-tutor
+    - title: Tuition Fee
+      path: /tuition-fee
+    - title: FAQ
+      items:
+        - title: For Parents
+          path: /faq-parents
+        - title: For Tutors
+          path: /faq-tutors
+  
+  footer:
+    - title: Company
+      items:
+        - title: About Us
+          path: /about-us
+        - title: Contact Us
+          path: /contact-us
+    - title: Legal
+      items:
+        - title: Privacy Policy
+          path: /privacy
+        - title: Terms of Service
+          path: /terms
