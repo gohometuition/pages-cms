@@ -1,113 +1,54 @@
-# Home page
-/:
-  template: home
-  meta:
-    title: "Home | Your Tutoring Service"
-    description: "Find qualified tutors or become a tutor. We connect students with experienced educators for personalized learning."
-    keywords: "tutoring, private tutor, education, learning"
+home:
+  path: /
+  title: Home
+  description: Welcome to our tutoring platform
 
-# Chinese URL (Decoded: 上门补习的学费都是先进家教的口袋吗？)
-/%e4%b8%8a%e9%97%a8%e8%a1%a5%e4%b9%a0%e7%9a%84%e5%ad%a6%e8%b4%b9%e9%83%bd%e6%98%af%e5%85%88%e8%bf%9b%e5%ae%b6%e6%95%99%e7%9a%84%e5%8f%a3%e8%a2%8b%e5%90%97%ef%bc%9f/:
-  template: article
-  meta:
-    title: "关于补习费用 | Your Tutoring Service"
-    description: "了解有关补习费用的详细信息和支付方式"
-    keywords: "补习费用, 家教费用, 教育投资"
+tuition:
+  path: /tuition-fee
+  title: Tuition Fees
+  description: Learn about our tutoring rates and payment options
 
-/tuition-fee/:
-  template: pricing
-  meta:
-    title: "Tuition Fees & Pricing | Your Tutoring Service"
-    description: "Transparent pricing and fee structure for our tutoring services"
-    keywords: "tuition fees, tutoring cost, pricing, education fees"
-  cache:
-    ttl: 3600
+become-tutor:
+  path: /become-tutor
+  title: Become a Tutor
+  description: Join our tutoring team and start teaching
 
-/terms/:
-  template: legal
-  meta:
-    title: "Terms of Service | Your Tutoring Service"
-    description: "Terms and conditions for using our tutoring services"
-    keywords: "terms of service, conditions, legal, agreement"
-  cache:
-    ttl: 86400
+request-tutor:
+  path: /request-tutor
+  title: Request a Tutor
+  description: Find the perfect tutor for your needs
 
-/become-tutor/:
-  template: tutor-signup
-  meta:
-    title: "Become a Tutor | Your Tutoring Service"
-    description: "Join our network of professional tutors and start teaching students"
-    keywords: "become tutor, teaching jobs, tutoring career"
-  forms:
-    - tutor_application
+faq-tutors:
+  path: /faq-tutors
+  title: FAQ for Tutors
+  description: Frequently asked questions for tutors
 
-/request-tutor/:
-  template: student-request
-  meta:
-    title: "Request a Tutor | Your Tutoring Service"
-    description: "Find the perfect tutor for your learning needs"
-    keywords: "find tutor, request tutor, private lessons"
-  forms:
-    - tutor_request
+faq-parents:
+  path: /faq-parents
+  title: FAQ for Parents
+  description: Frequently asked questions for parents and students
 
-/faq-tutors/:
-  template: faq
-  meta:
-    title: "Tutor FAQ | Your Tutoring Service"
-    description: "Frequently asked questions for tutors about joining and teaching"
-    keywords: "tutor FAQ, teaching questions, tutor help"
-  cache:
-    ttl: 86400
+about:
+  path: /about-us
+  title: About Us
+  description: Learn more about our tutoring service and mission
 
-/faq-parents/:
-  template: faq
-  meta:
-    title: "Parent FAQ | Your Tutoring Service"
-    description: "Frequently asked questions for parents about our tutoring services"
-    keywords: "parent FAQ, tutoring questions, student help"
-  cache:
-    ttl: 86400
+contact:
+  path: /contact-us
+  title: Contact Us
+  description: Get in touch with our team
 
-/about-us/:
-  template: about
-  meta:
-    title: "About Us | Your Tutoring Service"
-    description: "Learn about our mission, values, and commitment to education"
-    keywords: "about us, tutoring company, education mission"
-  cache:
-    ttl: 86400
+privacy:
+  path: /privacy
+  title: Privacy Policy
+  description: Our privacy policy and data protection practices
 
-/privacy/:
-  template: legal
-  meta:
-    title: "Privacy Policy | Your Tutoring Service"
-    description: "Our commitment to protecting your privacy and personal information"
-    keywords: "privacy policy, data protection, confidentiality"
-  cache:
-    ttl: 86400
+terms:
+  path: /terms
+  title: Terms of Service
+  description: Terms and conditions for using our service
 
-/contact-us/:
-  template: contact
-  meta:
-    title: "Contact Us | Your Tutoring Service"
-    description: "Get in touch with our team for any questions or support"
-    keywords: "contact, support, help, reach us"
-  forms:
-    - contact_form
-  cache:
-    ttl: 1800
-
-# Global settings
-_global:
-  site_name: "Your Tutoring Service"
-  favicon: "/assets/favicon.ico"
-  og_image: "/assets/og-image.png"
-  analytics:
-    google_analytics_id: "UA-XXXXXXXX-X"
-  social:
-    twitter: "@YourTutorService"
-    facebook: "YourTutorService"
-  headers:
-    X-Frame-Options: "SAMEORIGIN"
-    X-XSS-Protection: "1; mode=block"
-    X-Content-Type-Options: "nosniff"
+chinese-tuition:
+  path: /上门补习的学费都是先进家教的口袋吗
+  title: 上门补习的学费说明
+  description: 了解我们的上门补习收费标准和付款方式
